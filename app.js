@@ -12,7 +12,7 @@ window.addEventListener("load", () => {
   const fullDate = document.querySelector(".date");
   const fullTime = document.querySelector(".time");
 
-  //temp
+  //TODO cleanup?
 
   const time = new Date();
   const day = [
@@ -64,7 +64,7 @@ window.addEventListener("load", () => {
     return result;
   };
 
-  //START, if no
+  //Start, using geolocation as default
 
   if (city_name.length === 0) {
     if (navigator.geolocation) {
@@ -77,7 +77,7 @@ window.addEventListener("load", () => {
       });
     }
   }
-
+//Event listener for input
   const input = document.querySelector(".search-bar");
   input.addEventListener("keypress", (e) => {
     console.log(e.keyCode);
@@ -91,7 +91,7 @@ window.addEventListener("load", () => {
   });
 
   
-  //To choosing between geolocation or city name
+  //Function to fetch, while setting the time and icon
 
   const fetching = (api) => {
     fetch(api)
