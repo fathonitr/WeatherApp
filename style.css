@@ -1,0 +1,75 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(rgb(80, 215, 233), rgb(204, 203, 203));
+    font-family: Arial, Helvetica, sans-serif;
+    color: beige;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.app-wrapper{
+    height: 80vh;
+    width:80%;
+    background:linear-gradient(rgba(204, 203, 203, 0.7), rgba(80, 215, 233, 0.5));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+}
+.search-bar{
+    width:80%;
+    border: none;
+    border-bottom: 2px solid rgb(233, 138, 170);
+    background-color: rgba(255, 255, 255, 0.1);
+    color:rgb(83, 83, 83);
+    border-radius: 15px 5px 15px 5px;
+    padding:10px 15px;
+    outline: none;
+    font-size: 25px;
+    transition: 0.5s ease-out;
+}
+.search-bar:focus{
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.location{
+    width:80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height:30vh;
+}
+.temperature{
+    background-color: rgba(102, 102, 102, 0.315);
+    width:80%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+.degree-section{
+display:flex;
+cursor: pointer;
+}
+.degree-section span{
+font-size: 30px;
+}
+.degree-section h2{
+    font-size: 40px;
+}

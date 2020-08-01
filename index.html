@@ -1,11 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>WeatherApp</title>
 </head>
+
 <body>
+    <div class="app-wrapper">
+        <div class="header">
+            <input class="search-bar", type="text" autocapitalize="on", autocomplete="off", placeholder="Search for your city">
+        </div>
+        <div class="location">
+            <h1 class="location-timezone">Timezone</h1>
+            <p class="date"></p>
+            <p class="time"></p>
+            <canvas class="iconID" width="128" height="128"></canvas>
+        </div>
+        <div class="temperature">
+            <div class="degree-section">
+                <h2 class="temperature-degree">34</h2>
+                <span>°c</span>
+            </div>
+            <div class="temperature-description">it's cold</div>
+        </div>
+    </div>
     
+
+    <script src="skycons.js"></script>
+    <script src="app.js"></script>
 </body>
+
 </html>
