@@ -5,7 +5,7 @@
 }
 
 body{
-    background: linear-gradient(rgb(80, 215, 233), rgb(204, 203, 203));
+    background: linear-gradient(#414141, rgb(51, 51, 51));
     font-family: Arial, Helvetica, sans-serif;
     color: beige;
     height:100vh;
@@ -31,9 +31,9 @@ body{
     height: 20vh;
 }
 .search-bar{
-    width:80%;
+    width:40%;
     border: none;
-    border-bottom: 2px solid rgb(233, 138, 170);
+    border-bottom: 2px solid #e7c738;
     background-color: rgba(255, 255, 255, 0.1);
     color:rgb(83, 83, 83);
     border-radius: 15px 5px 15px 5px;
@@ -53,6 +53,10 @@ body{
     justify-content: space-around;
     align-items: center;
     height:30vh;
+}
+.location .location-timezone{
+    font-size: 60px;
+    text-shadow: 2px 4px rgb(83, 83, 83);
 }
 .temperature{
     background-color: rgba(102, 102, 102, 0.315);
