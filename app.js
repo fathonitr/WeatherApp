@@ -1,4 +1,6 @@
-window.addEventListener("load", () => {
+import runner from './listener.js'
+runner();
+/* window.addEventListener("load", () => {
   let long;
   let lat;
   const API_KEY = "ed6fe5f7021748a6706212149dc2ef03";
@@ -11,6 +13,9 @@ window.addEventListener("load", () => {
   let city_name = "";
   const fullDate = document.querySelector(".date");
   const fullTime = document.querySelector(".time");
+
+  //TEST import
+
 
   //TODO cleanup?
 
@@ -55,11 +60,10 @@ window.addEventListener("load", () => {
   };
 
   const calculateTimeZone = (timeZone) => {
-    let result = time.getUTCHours()+timeZone / 60 / 60;
+    let result = time.getUTCHours() + timeZone / 60 / 60;
     console.log(result);
     if (result > 24) {
-      result =result-24;
-      
+      result = result - 24;
     }
     return result;
   };
@@ -77,7 +81,7 @@ window.addEventListener("load", () => {
       });
     }
   }
-//Event listener for input
+  //Event listener for input
   const input = document.querySelector(".search-bar");
   input.addEventListener("keypress", (e) => {
     console.log(e.keyCode);
@@ -90,7 +94,6 @@ window.addEventListener("load", () => {
     }
   });
 
-  
   //Function to fetch, while setting the time and icon
 
   const fetching = (api) => {
@@ -137,3 +140,4 @@ window.addEventListener("load", () => {
     return skycons.set(iconID, Skycons[currentIcon]);
   }
 });
+ */
