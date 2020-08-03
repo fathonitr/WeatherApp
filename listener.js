@@ -6,6 +6,7 @@ export default function runner(){
       })
 }
 
+//KOK BISA JALAN???
 const input = document.querySelector(".search-bar");
 input.addEventListener('keypress', (e)=>{
     perInputFetch(e, input)
