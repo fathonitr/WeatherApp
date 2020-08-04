@@ -1,13 +1,15 @@
-import {defaultFetch, perInputFetch} from './fetcher.js'
+import { defaultFetch, perInputFetch } from "./fetcher.js";
 
-export default function runner(){
-    window.addEventListener('load',()=>{
-        defaultFetch()
-      })
+export default function runner() {
+  window.addEventListener("load", () => {
+    defaultFetch();
+    onSearchBar();
+  });
 }
 
-//KOK BISA JALAN???
-const input = document.querySelector(".search-bar");
-input.addEventListener('keypress', (e)=>{
-    perInputFetch(e, input)
-})
+const onSearchBar = () => {
+  const input = document.querySelector(".search-bar");
+  input.addEventListener("keypress", (e) => {
+    perInputFetch(e, input);
+  });
+};
