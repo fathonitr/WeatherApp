@@ -80,3 +80,19 @@ font-size: 30px;
     font-size: 50px;
     text-shadow: 2px 3px rgba(68, 68, 68, 0.349);
 }
+@media screen and (max-width: 1080px){
+    .wrapper{
+        width:93%;
+        height:100vh;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .header, .content{
+        
+        margin-bottom: 5.5vh;
+    }
+    .content{
+        height:50vh;
+    }
+}
